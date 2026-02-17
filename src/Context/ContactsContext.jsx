@@ -21,7 +21,7 @@ const ContactsContextProvider = ({ children }) => {
 
     const provider_values = {
         contacts: contactsState,
-        favorite_name: 'pepe'
+        favorite_name: 'Homero'
     }
 
     return (
