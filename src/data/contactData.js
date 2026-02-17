@@ -3,7 +3,7 @@ const contacts = [
         id: 1,
         name: 'Homero',
         last_time_connection: 'Hace 2 horas',
-        profile_picture: 'https://static.wikia.nocookie.net/ficcion-sin-limites/images/d/db/Homero.jpg/revision/latest?cb=20200827032655&path-prefix=es',
+        profile_picture: 'https://media.tycsports.com/files/2024/04/19/705992/homero-simpson_416x234.webp',
         messages: [
             {
                 id: 1,
@@ -25,7 +25,7 @@ const contacts = [
         id: 2,
         name: 'BART',
         last_time_connection: 'Hace 3 horas',
-        profile_picture: 'https://static.wikia.nocookie.net/doblaje/images/8/86/Bart.png/revision/latest?cb=20131124215321&path-prefix=es',
+        profile_picture: 'https://www.clipartmax.com/png/full/109-1090322_el-barto-bart-simpson-el-barto.png',
         messages: [
             {
                 id: 1,
