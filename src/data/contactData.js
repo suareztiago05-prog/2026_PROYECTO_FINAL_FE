@@ -1,20 +1,20 @@
 const contacts = [
     {
         id: 1,
-        name: 'Yoda',
+        name: 'Homero',
         last_time_connection: 'Hace 2 horas',
-        profile_picture: 'https://images.immediate.co.uk/production/volatile/sites/3/2017/12/yoda-the-empire-strikes-back-28a7558.jpg?quality=90&webp=true&resize=800,534',
+        profile_picture: 'https://static.wikia.nocookie.net/ficcion-sin-limites/images/d/db/Homero.jpg/revision/latest?cb=20200827032655&path-prefix=es',
         messages: [
             {
                 id: 1,
-                text: 'Hola, como estas?',
+                text: 'Como andas paa?',
                 send_by_me: true, // true si el mensaje fue enviado por mi, false si el mensaje fue enviado por el contacto
                 created_at: '2024-06-01T12:00:00Z',
                 is_read: true
             },
             {
                 id: 2,
-                text: 'Bien yo estoy',
+                text: 'Comiendo unas donas, ooouh',
                 send_by_me: false,
                 created_at: '2024-06-01T12:05:00Z',
                 is_read: false
@@ -23,9 +23,9 @@ const contacts = [
     },
     {
         id: 2,
-        name: 'Pepe',
+        name: 'BART',
         last_time_connection: 'Hace 3 horas',
-        profile_picture: 'https://www.clarin.com/img/2022/01/20/GWR2-6fo__1256x620__1.jpg',
+        profile_picture: 'https://static.wikia.nocookie.net/doblaje/images/8/86/Bart.png/revision/latest?cb=20131124215321&path-prefix=es',
         messages: [
             {
                 id: 1,
@@ -36,7 +36,7 @@ const contacts = [
             },
             {
                 id: 2,
-                text: 'Bien yo estoy',
+                text: 'Grafiteamos la city?',
                 send_by_me: false,
                 created_at: '2024-06-01T12:05:00Z',
                 is_read: false
