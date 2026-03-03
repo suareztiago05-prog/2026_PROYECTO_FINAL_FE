@@ -73,3 +73,8 @@ export default function ContactScreen() {
     </div>
   )
 }
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  console.log("FUNCIONA")
+}
