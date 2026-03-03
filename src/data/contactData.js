@@ -15,14 +15,21 @@ const contacts = [
             },
             {
                 id: 2,
+                text: 'no le digas a marge',
+                send_by_me: false,
+                created_at: '2024-06-01T19:01:00Z',
+                is_read: true
+            },
+            {
+                id: 3,
                 text: 'No tardes mucho...',
                 send_by_me: true,
                 created_at: '2024-06-01T19:02:00Z',
                 is_read: true
             },
             {
-                id: 3,
-                text: 'Creo que gané algo en una máquina rara… 🎰',
+                id: 4,
+                text: 'Creo que gané algo en una máquina rara…',
                 send_by_me: false,
                 created_at: '2024-06-01T19:10:00Z',
                 is_read: false
@@ -38,21 +45,21 @@ const contacts = [
         messages: [
             {
                 id: 1,
-                text: 'Homero no responde hace 40 minutos...',
+                text: 'Homero no responde',
                 send_by_me: false,
                 created_at: '2024-06-01T19:30:00Z',
                 is_read: true
             },
             {
                 id: 2,
-                text: 'Seguro está celebrando algo 🙄',
+                text: 'Seguro está celebrando algo',
                 send_by_me: true,
                 created_at: '2024-06-01T19:31:00Z',
                 is_read: true
             },
             {
                 id: 3,
-                text: 'Moe dice que se fue “a hacer negocios”... eso me preocupa 😟',
+                text: 'Moe dice que se fue “a hacer negocios”... eso me preocupa',
                 send_by_me: false,
                 created_at: '2024-06-01T19:32:00Z',
                 is_read: false
@@ -68,25 +75,32 @@ const contacts = [
         messages: [
             {
                 id: 1,
-                text: 'Estoy investigando. Moe miente.',
+                text: 'Estoy investigando sobre los therians.',
                 send_by_me: false,
                 created_at: '2024-06-01T19:33:00Z',
                 is_read: true
             },
             {
                 id: 2,
-                text: 'Cómo sabes?',
+                text: 'buena suerte jaja',
                 send_by_me: true,
                 created_at: '2024-06-01T19:34:00Z',
                 is_read: true
             },
             {
                 id: 3,
-                text: 'Sus patrones de lenguaje cambiaron. Claramente está encubriendo algo.',
+                text: 'ahora resulta que hay "multi-Therian" (o politherian).',
                 send_by_me: false,
                 created_at: '2024-06-01T19:35:00Z',
                 is_read: false
-            }
+            },
+            {
+                id: 4,
+                text: 'Es una gran epoca para los psicologos',
+                send_by_me: true,
+                created_at: '2024-06-01T19:36:00Z',
+                is_read: true
+            },
         ]
     },
 
@@ -112,7 +126,7 @@ const contacts = [
             },
             {
                 id: 3,
-                text: 'Relajate, ahora tenemos una máquina tragamonedas en el living 😎',
+                text: 'Relajate, dijo que me iba a comprar una moto si ganaba',
                 send_by_me: false,
                 created_at: '2024-06-01T19:22:00Z',
                 is_read: false
@@ -128,21 +142,21 @@ const contacts = [
         messages: [
             {
                 id: 1,
-                text: 'Bart dijo que era inversión familiar…',
+                text: 'Como le digo a lisa que la amo?',
                 send_by_me: false,
                 created_at: '2024-06-01T19:23:00Z',
                 is_read: true
             },
             {
                 id: 2,
-                text: 'Milhouse…',
+                text: 'Milhouse… no lo intentes',
                 send_by_me: true,
                 created_at: '2024-06-01T19:24:00Z',
                 is_read: true
             },
             {
                 id: 3,
-                text: 'Mi papá dice que esto termina en desastre 😰',
+                text: 'soy su hombre ideal',
                 send_by_me: false,
                 created_at: '2024-06-01T19:25:00Z',
                 is_read: false
@@ -174,7 +188,7 @@ const contacts = [
         messages: [
             {
                 id: 1,
-                text: 'Bart introdujo una máquina tragamonedas en la escuela.',
+                text: 'Bart no vino a clases.',
                 send_by_me: false,
                 created_at: '2024-06-01T19:10:00Z',
                 is_read: true
@@ -227,14 +241,14 @@ const contacts = [
             },
             {
                 id: 2,
-                text: 'Eso sería histórico.',
+                text: 'Homero con dinero? jaja.',
                 send_by_me: true,
                 created_at: '2024-06-01T19:16:00Z',
                 is_read: true
             },
             {
                 id: 3,
-                text: 'Eso no puede quedar así… excelente.',
+                text: 'cierto… excelente.',
                 send_by_me: false,
                 created_at: '2024-06-01T19:17:00Z',
                 is_read: false
