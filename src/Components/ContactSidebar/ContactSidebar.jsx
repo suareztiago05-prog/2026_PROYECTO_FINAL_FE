@@ -1,46 +1,52 @@
 import React, { useContext } from 'react'
-import { getContacts } from '../../services/contactsService'
 import { ContactsContext } from '../../Context/ContactsContext'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 export default function ContactSidebar() {
-    //useContext es un hook que nos permite consumir el contexto
-    //Recibe por parametro el contexto que queremos consumir
-    //Una vez consumido me traera el valor del value del contexto
-    const { contacts, favorite_name } = useContext(ContactsContext)
-  return (
-    <div>
-        <h2>Whatsapp Clone</h2>
-        <h3>Me cae muy bien: {favorite_name}</h3>
+
+    const { contacts } = useContext(ContactsContext)
+
+    return (
         <div>
-            {
-                contacts.map(
-                    (contact ) => {
-                        return (
-                            <Link 
-                                to={`/contact/${contact.id}`}
-                                key={contact.id}
-                                
-                            >
-                                <img 
-                                    src={contact.profile_picture} 
-                                    alt={contact.name} 
-                                    style={
-                                        {
-                                            width: '200px'
-                                        }
-                                    }
-                                />
-                                <h3>{contact.name}</h3>
-                                <span>{contact.last_time_connection}</span>
-                                <br />
-                                <hr />
-                            </Link>
-                        )
-                    }
-                )
-            }
+
+            <h2 style={{ padding: "15px" }}>Whatsapp Clone</h2>
+
+            <div>
+                {
+                    contacts.map((contact) => (
+                        <Link
+                            to={`/contact/${contact.id}`}
+                            key={contact.id}
+                            style={{
+                                textDecoration: "none",
+                                color: "inherit"
+                            }}
+                        >
+                            <div className="contact-item">
+
+                                <div className="contact-row">
+
+                                    <img
+                                        src={contact.profile_picture}
+                                        alt={contact.name}
+                                        className="profile-pic"
+                                    />
+
+                                    <div className="contact-info">
+                                        <strong>{contact.name}</strong>
+                                        <span style={{ fontSize: "12px", opacity: 0.7 }}>
+                                            {contact.last_time_connection}
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </Link>
+                    ))
+                }
+            </div>
+
         </div>
-    </div>
-  )
+    )
 }
