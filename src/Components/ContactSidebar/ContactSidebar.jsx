@@ -97,7 +97,7 @@ export default function ContactSidebar() {
                 }
             </div>
 
-            {/* Dueño */}
+            {/* maggi -> creador? */}
             <div style={styles.ownerSection}>
                 <img
                     src="https://w7.pngwing.com/pngs/469/474/png-transparent-maggie-simpson-marge-simpson-homer-simpson-lisa-simpson-bart-simpson-homero-television-springfield-cartoon.png"
@@ -138,7 +138,7 @@ const styles = {
         margin: 0,
         fontSize: "20px",
         fontWeight: "600",
-        color: "#111b21" // más oscuro
+        color: "#111b21" 
     },
 
     chatList: {
@@ -182,12 +182,12 @@ const styles = {
     contactName: {
         fontSize: "16px",
         fontWeight: "600",
-        color: "#111b21" // fuerte y legible
+        color: "#111b21" 
     },
 
     time: {
         fontSize: "12px",
-        color: "#667781" // gris WhatsApp real
+        color: "#667781" 
     },
 
     bottomRow: {

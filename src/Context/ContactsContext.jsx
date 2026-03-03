@@ -11,7 +11,6 @@ const ContactsContextProvider = ({ children }) => {
     const initialContacts = getContacts();
     const [contactsState, setContactsState] = useState(initialContacts);
 
-    // 🔥 Función para agregar mensaje a un contacto
     const addMessage = (contactId, newMessage) => {
 
     const updatedContacts = contactsState.map(contact => {
