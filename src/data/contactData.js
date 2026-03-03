@@ -4,7 +4,7 @@ const contacts = [
         id: 1,
         name: 'Homero',
         last_time_connection: 'Hace 1 minuto',
-        profile_picture: 'https://media.tycsports.com/files/2024/04/19/705992/homero-simpson_416x234.webp',
+        profile_picture: 'https://w7.pngwing.com/pngs/723/455/png-transparent-homer-simpson-bart-simpson-lisa-simpson-marge-simpson-peter-griffin-simpsons-homer-simpson-face-heroes-springfield.png',
         messages: [
             {
                 id: 1,
@@ -170,7 +170,7 @@ const contacts = [
         id: 7,
         name: 'Director Skinner',
         last_time_connection: 'Hace 15 minutos',
-        profile_picture: 'https://upload.wikimedia.org/wikipedia/en/3/3a/Principal_Skinner.png',
+        profile_picture: 'https://w7.pngwing.com/pngs/450/979/png-transparent-the-simpsons-character-illustration-principal-skinner-gary-chalmers-edna-krabappel-cletus-spuckler-mr-burns-the-simpsons-television-human-cartoon.png',
         messages: [
             {
                 id: 1,
@@ -200,7 +200,7 @@ const contacts = [
         id: 8,
         name: 'Jefe Gorgory',
         last_time_connection: 'Hace 3 minutos',
-        profile_picture: 'https://upload.wikimedia.org/wikipedia/en/9/9a/Chief_Wiggum.png',
+        profile_picture: 'https://w7.pngwing.com/pngs/465/548/png-transparent-chief-wiggum-ralph-wiggum-homer-simpson-maggie-simpson-lisa-simpson-bart-simpson-springfield-vertebrate-cartoon.png',
         messages: [
             {
                 id: 1,
@@ -216,7 +216,7 @@ const contacts = [
         id: 9,
         name: 'Sr. Burns',
         last_time_connection: 'Hace 20 minutos',
-        profile_picture: 'https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png',
+        profile_picture: 'https://w7.pngwing.com/pngs/3/176/png-transparent-mr-burns-homer-simpson-waylon-smithers-principal-skinner-ned-flanders-burns-television-springfield-vertebrate.png',
         messages: [
             {
                 id: 1,
