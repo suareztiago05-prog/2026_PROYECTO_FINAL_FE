@@ -24,57 +24,61 @@ export default function ContactScreen() {
   }
 
   return (
-    <div>
+  <div className="app-container">
+
+    <div className="sidebar">
       <ContactSidebar />
-
-      {
-        !contact_selected
-          ? (
-            <div>
-              <h1>El contacto seleccionado no existe</h1>
-            </div>
-          )
-          : (
-            <div>
-              <h1>Chat con {contact_selected.name}</h1>
-
-              <div>
-                {
-                  contact_selected.messages.map(message => (
-                    <div key={message.id}>
-                      {
-                        message.send_by_me
-                          ? <h3>Enviado por mí</h3>
-                          : <h3>Enviado por {contact_selected.name}</h3>
-                      }
-                      <p>{message.text}</p>
-                      <span>{message.time}</span>
-                      <hr />
-                    </div>
-                  ))
-                }
-              </div>
-
-              <form onSubmit={handleSubmit}>
-                <label htmlFor="message">Mensaje</label>
-                <textarea
-                  id="message"
-                  placeholder="Escribe un mensaje..."
-                  value={newMessage}
-                  onChange={(e) => setNewMessage(e.target.value)}
-                />
-                <button type="submit">Enviar</button>
-              </form>
-
-            </div>
-          )
-      }
-
     </div>
-  )
+
+    {
+      !contact_selected
+        ? (
+          <div className="chat-container">
+            <h1>El contacto seleccionado no existe</h1>
+          </div>
+        )
+        : (
+          <div className="chat-container">
+
+            <h2>Chat con {contact_selected.name}</h2>
+
+            <div className="messages-container">
+              {
+                contact_selected.messages.map(message => (
+                  <div
+                    key={message.id}
+                    className={`message ${message.send_by_me ? "me" : "other"}`}
+                  >
+                    <p>{message.text}</p>
+                    <span>
+                      {new Date(message.created_at).toLocaleTimeString()}
+                    </span>
+                  </div>
+                ))
+              }
+            </div>
+
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="message" style={{ display: "none" }}>
+                Escribe un mensaje
+              </label>
+
+              <textarea
+                id="message"
+                aria-label="Escribe un mensaje"
+                placeholder="Escribe un mensaje..."
+                value={newMessage}
+                onChange={(e) => setNewMessage(e.target.value)}
+              />
+
+              <button type="submit">Enviar</button>
+            </form>
+
+          </div>
+        )
+    }
+
+  </div>
+)
 }
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  console.log("FUNCIONA")
-}

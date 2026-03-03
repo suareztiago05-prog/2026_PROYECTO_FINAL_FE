@@ -14,29 +14,30 @@ const ContactsContextProvider = ({ children }) => {
     // 🔥 Función para agregar mensaje a un contacto
     const addMessage = (contactId, newMessage) => {
 
-        const updatedContacts = contactsState.map(contact => {
+    const updatedContacts = contactsState.map(contact => {
 
-            if (Number(contact.id) === Number(contactId)) {
+        if (Number(contact.id) === Number(contactId)) {
 
-                return {
-                    ...contact,
-                    messages: [
-                        ...contact.messages,
-                        {
-                            id: Date.now(),
-                            text: newMessage,
-                            time: new Date().toLocaleTimeString(),
-                            send_by_me: true
-                        }
-                    ]
-                };
-            }
+            return {
+                ...contact,
+                messages: [
+                    ...contact.messages,
+                    {
+                        id: Date.now(),
+                        text: newMessage,
+                        send_by_me: true,
+                        created_at: new Date().toISOString(),
+                        is_read: false
+                    }
+                ]
+            };
+        }
 
-            return contact;
-        });
+        return contact;
+    });
 
-        setContactsState(updatedContacts);
-    };
+    setContactsState(updatedContacts);
+};
 
     const provider_values = {
         contacts: contactsState,
